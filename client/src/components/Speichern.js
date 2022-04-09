@@ -1,6 +1,8 @@
+import '../styles/Material.css'
+
 function Speichern() {
     return (
-        <button>speichern</button>
+        <button class="speichernButton">speichern</button>
     )
 }
 

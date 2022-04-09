@@ -2,6 +2,26 @@ input::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
 
-@media screen and (max-width: 760px) {
-    
+
+.input-button {
+    display: flex;
+    align-items: center;
+}
+
+#prodForm {
+    display: none;
+}
+
+#prodList {
+    display: block;
+}
+
+@media screen and (max-width: 750px) {
+    #prodList {
+        display: none;
+    }
+
+    #prodForm {
+        display: block;
+    }
 }

@@ -1,8 +1,10 @@
+import '../styles/Material.css'
+
 function MaterialList() {
     return (
-        <div>
-            <p>material</p>
-            <input list="materialList" name="materialList" placeholder='Wãhlen ein material' />
+        <div class="input-button">
+            <p class="input-title">material</p>
+            <input id="materialInput" list="materialList" name="materialList" placeholder='Wãhlen ein material' />
             <datalist id="materialList">
                 <option value="Material 1" />
                 <option value="Material 2" />
