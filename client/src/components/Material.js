@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 import '../styles/Material.css'
 
 function Material() {
@@ -6,13 +8,16 @@ function Material() {
             <h2>Material Erfassung</h2>
             
             <p>material</p>
-            <input list="materialList" name="materialList" />
+            
+            <input list="materialList" name="materialList" placeholder='Wãhlen ein material' />
             <datalist id="materialList">
-                <option value="Material 1"/>
-                <option value="Material 2"/>
-                <option value="Material 3"/>
+                <option value="Material 1" />
+                <option value="Material 2" />
+                <option value="Material 3" />
+                <option value="Material 4" />
             </datalist>
-
+            <button>&#x25BC;</button>
+            
             <input type="text" id="chargeInput" name="charge" /> 
             <p>chargen-nr.</p>
 
