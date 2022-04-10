@@ -2,7 +2,6 @@ input::-webkit-calendar-picker-indicator {
     opacity: 0;
 }
 
-
 .input-button {
     display: flex;
     align-items: center;
@@ -16,12 +15,60 @@ input::-webkit-calendar-picker-indicator {
     display: block;
 }
 
+h2 {
+    margin-left: 3%;
+}
+
 @media screen and (max-width: 750px) {
     #prodList {
         display: none;
     }
 
     #prodForm {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3%;
+        justify-content: space-evenly;
+
+        flex-shrink: inherit;        
+    }
+
+    label > p {
+        margin: 0em;
+    }
+
+    #prodForm > label {
+        /*flex: 1 0 50%;*/
+        flex: 0 1 50%;
+        margin-top: 5%;        
+    }
+
+    #prodForm > label:first-child {
+        flex: 0 1 100%;
+        margin-top: 0em;
+        
+        /*margin-left: 0em;*/
+    }
+
+    .selectMaterial {
+        width: 70%;
+        height: 2em;
+        
+        border: 0.2em solid #000;
+
+        background-color: #fff;
+    }
+
+    input {
+        height: 1.5em;
+        
+        border: 0.2em solid #000;
+
+        background-color: #fff;
+    }
+
+    .buttonForm {
+        margin-top: 2em;
+        margin-left: 50%;
     }
 }
